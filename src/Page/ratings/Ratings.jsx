@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Ratings() {
-  return (
-    <div>Ratings</div>
-  )
+ return <div>Xếp Hạng</div>;
 }
 
-export default Ratings
+export default Ratings;

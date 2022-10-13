@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Follow() {
-  return (
-    <div>Follow</div>
-  )
+ return <div>Theo Dõi</div>;
 }
 
-export default Follow
+export default Follow;

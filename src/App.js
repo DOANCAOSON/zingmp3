@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Aside from "./component/aside/Aside";
 import Footer from "./component/footer/Footer";
 import Nav from "./component/nav/Nav";
@@ -13,6 +13,7 @@ import Newmusic from "./Page/newmusic/Newmusic";
 import Zingchart from "./Page/zingchart/Zingchart";
 import Ratings from "./Page/ratings/Ratings";
 import Mv from "./Page/mv_video/Mv";
+import Individual from "./Page/individual/Individual";
 
 function App() {
  return (
@@ -25,6 +26,7 @@ function App() {
     <div className="zing_mp3-main_section">
      <Section />
      <Routes>
+      <Route path="/ca_nhan" element={<Individual />} />
       <Route path="/" element={<Home />} />
       <Route path="/category" element={<Category />} />
       <Route path="/karaoke" element={<Karaoke />} />

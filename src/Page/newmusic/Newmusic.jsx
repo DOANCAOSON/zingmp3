@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Newmusic() {
-  return (
-    <div>Newmusic</div>
-  )
+ return <div>Nhạc mới</div>;
 }
 
-export default Newmusic
+export default Newmusic;
