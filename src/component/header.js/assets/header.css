@@ -1,6 +1,73 @@
 .header {
- height: 70px;
- width: 100%;
- background-color: #1e1e1e;
- color: #fff;
+    height: 70px;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.header-icon {
+    color: #616161;
+    margin: 0px 24px 0px 52px;
+}
+.header-icon-item {
+    font-size: 24px;
+    color: #605d5d;
+    margin: 0px 8px;
+}
+.header-search {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    background-color: #353535;
+    border-radius: 24px;
+    padding: 20px 0px;
+}
+.header-search-icon_item {
+    font-size: 24px;
+    color: #616161;
+    margin: 0px 12px;
+}
+.header-search-input_item {
+    height: 34px;
+    width: 466px;
+    background-color: #353535;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-account {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-account-list {
+    margin-right: 54px;
+    display: flex;
+    align-items: center;
+}
+.header-account-list-item {
+    height: 38px;
+    width: 38px;
+    background-color: #353535;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 8px;
+}
+
+.header-account-list-img {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+}
+.header-account-list-item-icon {
+    font-size: 24px;
+    margin: auto;
+    color: #c9c3c3;
 }

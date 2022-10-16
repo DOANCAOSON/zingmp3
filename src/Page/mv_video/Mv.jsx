@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Mv() {
-  return (
-    <div>Mv</div>
-  )
+    return <div>Mv</div>;
 }
 
-export default Mv
+export default Mv;

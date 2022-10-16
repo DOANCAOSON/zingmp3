@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/Footer.css";
-import { GiSelfLove } from "react-icons/gi";
+import { GiSelfLove, GiMicrophone } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
 import { FaRandom } from "react-icons/fa";
 import { BsPlayCircle } from "react-icons/bs";
@@ -9,6 +9,9 @@ import {
     IoPlaySkipBackSharp,
     IoPlaySkipForwardSharp,
 } from "react-icons/io5";
+import { MdOutlineOndemandVideo } from "react-icons/md";
+import { BiWindows } from "react-icons/bi";
+import { IoMdVolumeHigh } from "react-icons/io";
 
 function Footer() {
     return (
@@ -38,29 +41,46 @@ function Footer() {
                 <div className="footer-startstop-list">
                     <div className="footer-startstop-item">
                         <div>
-                            <FaRandom />
+                            <FaRandom className="footer-startstop-item_icon " />
                         </div>
                         <div>
-                            <IoPlaySkipBackSharp />
+                            <IoPlaySkipBackSharp className="footer-startstop-item_icon " />
                         </div>
                         <div>
-                            <BsPlayCircle />
+                            <BsPlayCircle
+                                style={{ fontSize: "40px" }}
+                                className="footer-startstop-item_icon "
+                            />
                         </div>
                         <div>
-                            <IoPlaySkipForwardSharp />
+                            <IoPlaySkipForwardSharp className="footer-startstop-item_icon " />
                         </div>
                         <div>
-                            <ImLoop2 />
+                            <ImLoop2 className="footer-startstop-item_icon " />
                         </div>
                     </div>
                 </div>
                 <div className="footer-startstop-time">
                     <div className="footer-startstop-time">
+                        <p className="footer-startstop-time_start">
+                            00:00
+                        </p>
                         <div className="footer-startstop-time-item"></div>
+                        <p className="footer-startstop-time_stop">
+                            03:37
+                        </p>
                     </div>
                 </div>
             </div>
-            <div className="footer-karaoke_volume"></div>
+            <div className="footer-karaoke_volume">
+                <div className="footer-karaoke_volume-list">
+                    <MdOutlineOndemandVideo className="footer-karaoke_volume_icon" />
+                    <GiMicrophone className="footer-karaoke_volume_icon" />
+                    <BiWindows className="footer-karaoke_volume_icon" />
+                    <IoMdVolumeHigh className="footer-karaoke_volume_icon" />
+                    <div className="footer-karaoke_volume-item"></div>
+                </div>
+            </div>
         </div>
     );
 }
